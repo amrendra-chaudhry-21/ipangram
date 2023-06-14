@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  background-color: #f1f1f1;
+  position: absolute;
+  height: 100%;
+  overflow: -moz-hidden-unscrollable;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #b8afaf;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #b3a9a9;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.App {
+  font-family: sans-serif;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.output-wrapper {
+  box-sizing: border-box;
+  background-color: rgb(110, 10, 10);
+  border: 1px solid rgb(230, 230, 230);
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin-top: 30px;
+  font-size: 1.2em;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  border: 1px solid rgba(180, 180, 180, 0.5);
+}
+
+.color{
+  color: red;
+}
+.output-wrapper pre {
+  text-align: left;
+  display: inline-block;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
